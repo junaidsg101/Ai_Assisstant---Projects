@@ -1,0 +1,81 @@
+Test Case 1: Python
+Goal: Optimize Performance
+Code Snippet: (Copy and paste this into the text area)
+def find_duplicates(items):
+    duplicates = []
+    for i in range(len(items)):
+        for j in range(i + 1, len(items)):
+            if items[i] == items[j] and items[i] not in duplicates:
+                duplicates.append(items[i])
+    return duplicates
+
+my_list = [1, 2, 3, 2, 4, 5, 1, 6]
+print(find_duplicates(my_list))
+
+
+.............................................................................
+Test Case 2: C++
+Goal: Fix Bugs
+Code Snippet: (Copy and paste this into the text area)
+#include <iostream>
+#include <vector>
+
+double calculateAverage(std::vector<int> numbers) {
+    int sum = 0;
+    for (int i = 0; i <= numbers.size(); i++) {
+        sum += numbers[i];
+    }
+    return sum / numbers.size();
+}
+
+int main() {
+    std::vector<int> my_numbers = {10, 20, 30};
+    std::cout << "Average: " << calculateAverage(my_numbers) << std::endl;
+    return 0;
+}
+.............................................................................
+
+
+
+Test Case 3: Java
+Goal: Refactor for Readability
+Code Snippet: (Copy and paste this into the text area)
+import java.util.List;
+
+public class OrderProcessor {
+    public String processOrder(Order order) {
+        if (order != null) {
+            if (order.getItems() != null) {
+                if (order.getItems().size() > 0) {
+                    if (order.getUser() != null) {
+                        if (order.getUser().isActive()) {
+                            return "Order processed successfully";
+                        } else {
+                            return "User is not active";
+                        }
+                    } else {
+                        return "User is missing";
+                    }
+                } else {
+                    return "Order is empty";
+                }
+            } else {
+                return "Items are missing";
+            }
+        } else {
+            return "Order is null";
+        }
+    }
+}
+
+class Order {
+    private List<String> items;
+    private User user;
+    public List<String> getItems() { return items; }
+    public User getUser() { return user; }
+}
+
+class User {
+    private boolean active;
+    public boolean isActive() { return active; }
+}
