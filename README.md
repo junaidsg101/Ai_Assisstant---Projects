@@ -1,2 +1,2 @@
-# 1. Code Reviewer $ Refacrore
+# 1. Code Reviewer and Refacrore
 - The **AI Code Reviewer & Refactorer** is a lightweight, interactive web application built with Python and Streamlit. It leverages Large Language Models (LLMs) via the OpenAI-compatible API (such as Groq) to analyze, review, and automatically refactor code snippets. It enforces strict JSON output from the AI to ensure reliable, structured, and easily renderable feedback directly in the user interface.
